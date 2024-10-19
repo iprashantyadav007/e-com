@@ -1,0 +1,182 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+.App > .btnCartWrapper >button{
+    background-color: unset;
+    margin: 0;
+    padding: 0;
+}
+
+.btnCartWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #E91E63;
+    box-sizing: border-box;
+    
+}
+
+.btnCart {
+  color: white;
+  font-size: 0.7rem;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 8px;
+}
+  /* Button to open the drawer */
+  .open-button {
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+  
+  /* Side drawer styling */
+  .side-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+    overflow: hidden;
+    color: black;
+  }
+  
+  /* Close button styling */
+  .close-button {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: unset;
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  .close-button:hover {
+ 
+    background-color: unset;
+    padding: 0;
+    margin: 0;
+    
+  }
+  
+  .cartWrapper {
+    width: 100%;
+    padding: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cartWrapper > p{
+  margin: 20px 0px;
+}
+.itemFooter {
+  width: 100%;
+  height: 240px;
+  background-color: #0000000a;
+  box-shadow: -1px 0px 4px 1px #8080804f;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+}
+
+.itemFooter > button {
+  padding: 10px;
+  background-color: #E91E63;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.itemCheckout{
+  display: flex;
+  flex-direction: column;
+}
+
+.itemCheckoutRow {
+  display: flex;
+  margin: 5px 0px;
+  justify-content: space-between;
+}
+
+.itemShiping{
+  width: 50%;
+  text-align: left;
+}
+
+.itemTotal{
+  width: 50%;
+  text-align: right;
+  font-weight: 600;
+}
+
+@media screen and (min-width : 0px) and (max-width:500px) {
+  .side-drawer {
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 999;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.itemContent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-top: -16px;
+}
+
+.btnCartWrapper{
+  display: none;
+}
+
+/* Close button styling */
+.close-button {
+  display: none;
+  
+}
+
+.itemFooter {
+  width: 100%;
+  height: 200px;
+  background-color: #0000000a;
+  box-shadow: -1px 0px 4px 1px #8080804f;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 15px;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  margin-bottom: 110px;
+}
+
+}

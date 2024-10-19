@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  /* Ensure the root takes at least full viewport height */
+  display: flex;
+  flex-direction: column;
+  /* Column layout to push footer down */
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: #E91E63;
+  position: relative;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.MobileNav {
+  display: none;
+}
+
+@media screen and (min-width : 0px) and (max-width:500px) {
+
+  .footer>h3 {
+    display: none;
+  }
+
+  .footer {
+    background-color: white;
+    display: flex;
+    height: 55px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+    box-shadow: -1px 0px 7px 0px #0000001f;
+}
+
+  .MobileNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  
+
+
+}

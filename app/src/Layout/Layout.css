@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px; /* Max width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 10px; /* Optional: padding around the container */
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+  
+  .card-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards within the row */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 20px; /* Space between rows */
+  }
+
+  .heading{
+    margin-bottom: 5%;
+    color: #E91E63;
+  }
+  
+  .card {
+    width: 268px;
+    height: auto;
+   border-radius: 15px;
+   border: 1px solid #e91e625b;
+    box-shadow: 0px 2px 4px 0px rgb(0 0 0 / 10%);
+    overflow: hidden;
+    padding-bottom: 15px;
+background-color: white;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 1200px) {
+    .card-row {
+      justify-content: space-between; /* Adjust spacing for smaller screens */
+    }
+
+
+  }
+
+  @media screen and (min-width : 0px) and ( max-width:440px) {
+
+    .container {
+      
+      padding: 20px; /* Optional: padding around the container */
+      box-sizing: border-box;
+    }
+    
+
+    .card {
+      width: 350px;
+      height: auto;
+      margin-bottom: 15px;
+  }
+
+  .card-row {
+    display: block;
+    }
+  }
